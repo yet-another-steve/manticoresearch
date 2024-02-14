@@ -224,7 +224,7 @@ A string to insert before a keyword match. The `%SNIPPET_ID%` macro can be used 
 A string to insert after a keyword match. The default is `</b>`.
 
 #### limit
-The maximum snippet size, in symbols (codepoints). The default is 256. This is applied per-field by default, see `limits_per_field`.
+The maximum length of total snippet output, in symbols (codepoints). The default is 256. With smaller values the number of snippets returned may be reduced to fit the length. This is applied per-field by default, see `limits_per_field`.
 
 #### limit_words
 Limits the maximum number of words that can be included in the result. Note that this limit applies to all words, not just the matched keywords to highlight. For example, if highlighting `Mary` and a snippet `Mary had a little lamb` is selected, it contributes 5 words to this limit, not just 1. The default is 0 (no limit). This is applied per-field by default, see `limits_per_field`.
